@@ -1781,7 +1781,7 @@ a.page-link {
 }
 
 .service-card-image {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* border-radius: 0px 60px 0px 60px;  */
     height: 250px;
     width: 400px;
@@ -1839,4 +1839,13 @@ a.page-link {
     justify-content: end;
     align-items: end;
     /* padding: px;  */
+}
+
+.project-card-image {
+    /* border: 2px solid red; */
+    /* border-radius: 0px 60px 0px 60px;  */
+    height: 250px;
+    width: 150px;
+    /* padding: 10px; */
+    margin: 30px 0px 30px 0px;
 }
