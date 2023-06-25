@@ -1810,3 +1810,8 @@ a.page-link {
     width: 20vw;
     padding: 20px;
 }
+
+.project-slider {
+    margin-left: 10%;
+    margin-right: 10%;
+}
