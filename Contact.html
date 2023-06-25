@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from spearheadhomes.in/Home/Contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Jun 2023 17:10:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Spearhead</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Pawan Kumar">
+
+    <title>Spearhead</title>
+    <!-- Additional CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="#" class="logo d-flex align-items-center">
+                <img src="img/Logo.png" />
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="Index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="About.html">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="Contact.html">Contact Us</a></li>
+                    <li><a class="nav-link scrollto" href="Blogs.html">Blogs</a></li>
+                    <li><a class="nav-link scrollto" href="OurProject.html">Our Project</a></li>
+                    <li class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="nav-link scrollto" href="CostEstimator.html">Cost Estimator</a></li>
+                            <li><a class="nav-link scrollto" href="HowItWorks.html">Work Flow</a></li>
+                            <li><a class="nav-link scrollto" href="../FloorPlan/FloorPlan.html">Floor Plans</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <div>
+        <section id="banner" class="banner d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </section>
+        <div class="container">
+    <div class="row block-9">
+        <div class="col-md-6 order-md-last">
+            <form action="#" class="bg-gry p-5 contact-form">
+                <div class="form-group mb-3">
+                    <input type="text" id="txtcustname" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" id="custphone" class="form-control _numberonly" maxlength="10" placeholder="Your Mobile No">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" id="custemail" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="text" id="txtsubj" class="form-control" placeholder="Subject">
+                </div>
+                <div class="form-group mb-3">
+                    <textarea name="" id="txtdescription" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <input type="button" style="background-color: #CE2427; color: #FEFEFE; " onclick="AddCustomerQuery();" value="Send Message" class="btn btn-blue py-3 px-5">
+                </div>
+                <span id="txterreor"></span>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div class="cnt-img">
+                <img src="img/contact.jpg" alt="contact">
+            </div>
+            <div class="info bg-gry p-4">
+                <label class="contact-label"><img src="img/home.svg" /> Address :</label>
+                <p>628/74 Gyan Vihar Colony <br> Hanuman Market, Kamta, Lucknow- 226028</p>
+
+                <label class="contact-label"><img src="img/phone.svg" /> Phone :</label>
+                <p><a href="tel://1234567920">+91-8299102676, +91-8081485735</a></p>
+
+                <label class="contact-label"><img src="img/email.svg" /> Email :</label>
+                <p><a href="mailto:info@yoursite.com">info@spearheadhomes.in</a></p>
+
+                <label class="contact-label"><img src="img/web.svg" /> Website :</label>
+                <p><a href="#">www.spearheadhomes.in</a></p>
+                <br /><br /><br />
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+    });
+    function AddCustomerQuery() {
+        var result = false;
+        custName = $("#txtcustname").val();
+        phone = $("#custphone").val();
+        custemail = $("#custemail").val();
+        subject = $("#txtsubj").val();
+        desc = $("#txtdescription").val();
+        if (custName.trim() != "" && phone.trim() != "" && custemail.trim() != "" && subject.trim() != "" && desc.trim() != "") {
+            result = true;
+        }
+        if (result) {
+            var customerQuery = {
+                CustomerName: custName,
+                MobileNo: phone,
+                EmailId: custemail,
+                Subject: subject,
+                Description: desc
+            }
+            $.ajax({
+                "url": '/Home/AddCustomerQuery',
+                "type": "POST",
+                "data": customerQuery,
+                "datatype": "json",
+                "ordering": false,
+                //beforeSend: function () {
+                //    spinneron();
+                //},
+                //complete: function () {
+                //    $("#loading").hide();
+                //},
+                success: function (data) {
+                    if (data.resultStatus == true) {
+                        $("#txterreor").text(data.message);
+                        $("#txterreor").css("color", "green");
+                        $("#txterreor").show();
+                        $("#txtcustname").val('');
+                        $("#custphone").val('');
+                        $("#custemail").val('');
+                        $("#txtsubj").val('');
+                        $("#txtdescription").val('');
+                    } else {
+                        $("#txterreor").text(data.message);
+                        $("#txterreor").css("color", "red");
+                        $("#txterreor").show();
+                    }
+                }
+            });
+        } else {
+            alert("all field required!");
+        }
+    }
+
+    $('._numberonly').keypress(function (e) {
+        var charCode = (e.which) ? e.which : event.keyCode
+        if (String.fromCharCode(charCode).match(/[^0-9]/g))
+            return false;
+    });
+</script>
+    </div>
+    <!-- End Features Section -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-12 footer-info">
+                        <div class="logo">
+                            <img src="img/question.svg" alt="">
+                            <span>HAVE A QUESTIONS?</span>
+                        </div>
+                        <div class="footer-address">
+                            <div><i class="bi bi-geo-alt"></i> <span class="icon"> 628/74 Gyan Vihar Colony, Hanuman Market, Kamta, Lucknow- 226028</span></div>
+                            <div><i class="bi bi-telephone"></i> <span class="icon">- +91-8299102676 +91-8081485735</span></div>
+                            <div><i class="bi bi-envelope"></i> <span class="icon"> info@spearheadhomes.in</span></div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 footer-links">
+                        <div class="logo">
+                            <img src="img/help.svg" alt="">
+                            <span>Get HELP</span>
+                        </div>
+                        <ul>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 footer-contact">
+                        <div class="logo">
+                            <img src="img/signup.svg" alt="">
+                            <span>Admin Login</span>
+                        </div>
+                        <form action="http://spearheadhomes.in/Home/Account/UserLogin" method="post" class="php-email-form">
+                            <span style="color:red"></span>
+                            <div class="row gy-4">
+                                <input type="text" name="EmailId" id="txtemaId" class="form-design" placeholder="EmailId" required>
+                                <input type="password" class="form-design" id="txtPassword" name="Password" placeholder="Password" required>
+                                <button type="submit" style="background-color: #FEFEFE; color: #CE2427;" class="btn btn-warning form-btn">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+    <!-- Vendor JS Files -->
+    <script src="../../cdn.jsdelivr.net/npm/bootstrap%405.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="../../cdn.jsdelivr.net/npm/bootstrap%405.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../Scripts/main.html"></script>
+    <script>
+        $(function () {
+            // Owl Carousel
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 4,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        });
+        $(document).ready(function () {
+            $(function () {
+                var url = window.location.pathname,
+                    urlRegExp = new RegExp(url.replace(/\/$/, '') + "$");
+                $('.navbar a').each(function () {
+                    if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                        $(this).addClass('active');
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+
+<!-- Mirrored from spearheadhomes.in/Home/Contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Jun 2023 17:10:38 GMT -->
+</html>
