@@ -32,7 +32,7 @@ h6 {
 --------------------------------------------------------------*/
 
 section {
-    padding: 90px 0;
+    padding: 30px 0;
     overflow: hidden;
 }
 
@@ -740,7 +740,7 @@ a.nav-link:hover{
 
 .features {
    /* background-color: w;*/
-    padding: 90px 0px 90px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
 .estimator {
@@ -1781,11 +1781,12 @@ a.page-link {
 }
 
 .service-card-image {
-    border: 5px solid red;
-    border-radius: 0px 60px 0px 60px; 
+    border: 2px solid red;
+    /* border-radius: 0px 60px 0px 60px;  */
     height: 250px;
     width: 400px;
-    padding: 10px;
+    /* padding: 10px; */
+    margin: 30px 0px 30px 0px;
 }
 
 .read-more-button {
@@ -1833,6 +1834,9 @@ a.page-link {
     border-radius: 100px 0px 100px 100px; 
     height: 350px;
     width: 500px;
-    margin: 5%;
+    margin: 2% ; 
+    display: flex;
+    justify-content: end;
+    align-items: end;
     /* padding: px;  */
 }
