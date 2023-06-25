@@ -1806,12 +1806,33 @@ a.page-link {
 .why-card-image {
     /* border: 5px solid red; */
     border-radius: 50% !important; 
-    height: 20vw;
-    width: 20vw;
-    padding: 20px;
+    height: 10vw;
+    width: 10vw;
+    /* padding: 20px; */
 }
 
 .project-slider {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 100px;
+    margin: 50px auto;
+}
+
+/* our service page css */
+
+.service-img-odd {
+    border: 5px solid red;
+    border-radius: 0px 100px 100px 100px; 
+    height: 350px;
+    width: 500px;
+    /* padding: px;  */
+}
+
+.service-img-even {
+    border: 5px solid red;
+    border-radius: 100px 0px 100px 100px; 
+    height: 350px;
+    width: 500px;
+    margin: 5%;
+    /* padding: px;  */
 }
