@@ -740,7 +740,9 @@ a.nav-link:hover{
 
 .features {
    /* background-color: w;*/
-    padding: 60px 0px 60px 0px;
+    padding: 60px 0px 6
+    
+    0px 0px;
 }
 
 .estimator {
@@ -1316,7 +1318,7 @@ textarea {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(../img/team-shape.svg) no-repeat center bottom;
+    /* background: url(../img/team-shape.svg) no-repeat center bottom; */
     background-size: contain;
     z-index: 1;
 }
@@ -1832,6 +1834,7 @@ a.page-link {
 .service-img-even {
     border: 5px solid red;
     border-radius: 100px 0px 100px 100px; 
+    
     height: 350px;
     width: 500px;
     margin: 2% ; 
